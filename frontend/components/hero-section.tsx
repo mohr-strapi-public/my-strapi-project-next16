@@ -14,7 +14,7 @@ const styles = {
 
 export function HeroSection({ data }: { readonly data: {
   heading: string, subHeading: string, link: { href: string, label: string },
-  image: { url: string, alternativeText: string }
+  image: [{ url: string, alternativeText: string }]
 } }) {
   if (!data) return null;
 
